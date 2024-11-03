@@ -1,11 +1,8 @@
 # PotatoDiseaseDetection
-Object Detection Algorithm used for detecting disease in plant leaves.
-
-
-This code demonstrates real-time object detection using the YOLOv8 model from the Ultralytics library. The YOLO (You Only Look Once) algorithm is a popular real-time object detection algorithm. In this implementation, the script captures video frames from a webcam, applies object detection using YOLOv8, and overlays bounding boxes and class labels on detected objects.
-
-Dependencies
-OpenCV (cv2) Ultralytics (yolov8) NumPy PyTorch (torch)
-
-Install the required dependencies using the following:
-bash Copy code pip install opencv-python ultralytics numpy torch Model and Class Names The YOLOv8 model is loaded using Ultralytics, and the COCO dataset class names are used for object detection. The class names include various common objects such as people, vehicles, animals, and household items.
+Developed a CNN model to classify potato diseases with over 90% accuracy,
+distinguishing between healthy plants and diseases like early and late blight.
+2. Implemented a 5-layer CNN, including convolutional, pooling, and fully connected layers
+and used 5000+ labelled images for image generalization.
+3. Trained the model over 50 epochs using TensorFlow and Keras, with learning rate
+scheduling and dropout regularization.
+4. Deployed as an API via Flask for real-time detection through a web interface.
